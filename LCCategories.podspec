@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LCCategories"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "iOS开发中常用的一些分类方法"
   s.homepage     = "https://github.com/Little-Captain/LCCategories"
   s.license      = "MIT"
