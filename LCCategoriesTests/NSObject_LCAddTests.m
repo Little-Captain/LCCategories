@@ -9,6 +9,8 @@
 #import <XCTest/XCTest.h>
 #import "NSObject+LCAdd.h"
 
+#define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
+
 @interface NSObject_LCAddTests : XCTestCase
 
 @end
@@ -27,17 +29,11 @@
 
 - (void)testClassInheritChain {
     
-    NSString *chainStr1 = [UICollectionView lc_classInheritChain];
+    NSLog(@"\n");
     
-    NSLog(@"%@", chainStr1);
-    
-    NSString *chainStr2 = [UITableView lc_classInheritChain];
-    
-    NSLog(@"%@", chainStr2);
-    
-    void (^block)(void) = ^{};
-    
-    NSLog(@"%@", [[block class] lc_classInheritChain]);
+    NSLog(@"%@", [UITableView lc_classInheritChain]);
+
+    NSLog(@"\n");
 }
 
 - (void)testExample {
