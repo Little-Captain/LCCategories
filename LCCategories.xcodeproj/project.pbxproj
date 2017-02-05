@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9571ADDA1E477406005D9D3B /* NSObject_LCAddTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9571ADD91E477406005D9D3B /* NSObject_LCAddTests.m */; };
 		958C30321E45DDF5002D9278 /* LCCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 958C30301E45DDF5002D9278 /* LCCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		958C30501E45E089002D9278 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 958C303B1E45E089002D9278 /* Foundation+Log.m */; };
 		958C30511E45E089002D9278 /* NSAttributedString+LCAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 958C303C1E45E089002D9278 /* NSAttributedString+LCAdd.h */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9571ADD91E477406005D9D3B /* NSObject_LCAddTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_LCAddTests.m; sourceTree = "<group>"; };
 		958C302D1E45DDF5002D9278 /* LCCategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LCCategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		958C30301E45DDF5002D9278 /* LCCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCCategories.h; sourceTree = "<group>"; };
 		958C30391E45E076002D9278 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				958C306B1E45E2CE002D9278 /* LCCategoriesTests.m */,
 				958C30741E45E449002D9278 /* Foundation_LogTests.m */,
+				9571ADD91E477406005D9D3B /* NSObject_LCAddTests.m */,
 				958C306D1E45E2CE002D9278 /* Info.plist */,
 			);
 			path = LCCategoriesTests;
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9571ADDA1E477406005D9D3B /* NSObject_LCAddTests.m in Sources */,
 				958C306C1E45E2CE002D9278 /* LCCategoriesTests.m in Sources */,
 				958C30751E45E449002D9278 /* Foundation_LogTests.m in Sources */,
 			);
@@ -488,6 +492,7 @@
 				958C30371E45DDF5002D9278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		958C30711E45E2CE002D9278 /* Build configuration list for PBXNativeTarget "LCCategoriesTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				958C30731E45E2CE002D9278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

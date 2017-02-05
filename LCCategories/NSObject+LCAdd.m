@@ -128,5 +128,17 @@ static void * const ivarsKey = "lc.ivarsList";
     return objc_getAssociatedObject(self, ivarsKey);
 }
 
++ (NSString *)lc_classInheritChain {
+    
+    NSMutableString *chainStr = [NSMutableString string];
+    Class tmpCls = [self class];
+    while ([NSObject class] != tmpCls) {
+        [chainStr appendFormat:@"%@ -> ", NSStringFromClass(tmpCls)];
+        tmpCls = class_getSuperclass(tmpCls);
+    }
+    [chainStr appendString:NSStringFromClass([NSObject class])];
+    
+    return chainStr.copy;
+}
 
 @end

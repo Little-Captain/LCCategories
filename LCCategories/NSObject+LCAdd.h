@@ -41,4 +41,11 @@
  */
 + (NSArray *)lc_ivarsList;
 
+/**
+ 返回当前类的继承链字符串
+
+ @return 继承链字符串
+ */
++ (NSString *)lc_classInheritChain;
+
 @end
